@@ -17,7 +17,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-dev \
     python3-pip
 RUN ln -s /usr/bin/python3 /usr/bin/python && ln -s pip3 /usr/bin/pip
-RUN pip install opencv-python
 
 # DarkNet
 RUN cp /usr/local/cuda/compat/* /usr/local/cuda/targets/x86_64-linux/lib/
